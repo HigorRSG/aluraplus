@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte-primaria: 'Inter', sans-serif;
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #167BF7;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.conteudo_um_background{
+    display: flex;
+    background-image: url(../img/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+
+}
+
+.conteudo_um{
+    display: flex;
+    flex-direction: column;
+    padding: 7% 0 0 7%;
+    gap: 20px;
+    align-items: center;
+    width: 42%;
+    height: 63.5%;
+}
+
+.conteudo_um h2{
+    font-size: 2.0rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    text-align: center;
+}
+
+.conteudo_um img{
+    width: 348px;
+}
+
+.conteudo_um_links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 150;
+    text-align: center;
+    width: 100%;
+}
+
+.conteudo_um_links a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px 0;
+}
+
+.link_oferta{
+    background-color: var(--cor-terciaria);
+    border: none !important;
+}
+
+.conteudo_um_links a:hover{
+    background-color: var(--cor-primaria);
+    color: black;
+}
+
+.conteudo_dois{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    gap: 80px;
+}
+
+.conteudo_dois img{
+    width: 498px;
+}
+
+.conteudo_dois div{
+    width: 50%;
+    font-family: var(--fonte-primaria);
+}
+
+.conteudo_dois div h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.conteudo_dois div p{
+    font-size: 1.5rem;
+    font-weight: 150;
+}
+
+.conteudo_tres{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    gap: 80px;
+}
+
+.conteudo_tres img{
+    width: 496px;
+}
+
+.conteudo_tres div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 150;
+    gap: 20px;
+}
+
+.conteudo_tres div a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    border-radius: 8px;
+    padding: 20px 0;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    width: 30%;
+}
+
+.conteudo_tres div a:hover{
+    background-color: var(--cor-primaria);
+    color: black;
+}
+
+.conteudo_quatro{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    gap: 80px;
+    padding-bottom: 5%;
+}
+
+.conteudo_quatro img{
+    width: 547px;
+}
+
+.conteudo_quatro div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    font-family: var(--fonte-primaria);
+    gap: 20px;
+}
+
+.conteudo_quatro div h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.conteudo_quatro div p{
+    font-size: 1.5rem;
+    font-weight: 150;
+}
+
+.conteudo_cinco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.conteudo_cinco h1{
+    font-size: 3rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+}
+
+.conteudo_cinco ul{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    padding: 0 10% 10% 10%;
+}
+
+.conteudo_cinco ul li{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.conteudo_cinco ul li img{
+    width: 100%;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 5%;
+}
+
+.rodape_links{
+    display: flex;
+    gap: 40px;
+    font-size: 1.2rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+}
+
+.rodape_links a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.rodape_links a:hover{
+    color: var(--cor-terciaria);
+}
+
+.rodape p{
+    font-size: 1.0rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 150;
+}
